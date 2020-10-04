@@ -156,8 +156,9 @@ img{
 	overflow-y: hidden;
 	transition: 0.5s;
 }
-.item h1{cursor: default; font-size: 150%;}
+.item h1{cursor: default; font-size: 100%;}
 .terbuka .tengahkan{text-align: center;}
+.terbuka h1{font-size: 200%;}
 .terbuka + .konten{
 	height: auto;
 }
