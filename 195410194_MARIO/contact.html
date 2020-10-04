@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link href="style/all.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/tools.js"></script>
+</head>
+<body>
+	<div id="head">
+		<div id="menu">
+			<div id="menuBtn" onclick="iconMenuBerubah(this);btnNav();">
+				<div class="garis bar1"></div>
+				<div class="garis noColor"></div>
+				<div class="garis bar2"></div>
+				<div class="garis noColor"></div>
+				<div class="garis bar3"></div>
+			</div>
+		</div>
+		<div id="judul">
+			<span>&Bopf;&eopf;&Yopf;&oopf;&uopf;&Topf;&Mopf;</span>
+		</div>
+	</div>
+	<div id="sidenav">
+		<a href="./">Home</a>
+		<a href="galeri.html">Gallery</a>
+		<a href="#" class="aktif">Contact</a>
+		<a href="about.html">About</a>
+	</div>
+	<div id="content">
+		<div id="sendEmail">
+			<form action="mailto:tmbeyou@gmail.com" id="ContactUs" method="post" onsubmit="return ValidateForm(this);">
+			<script type="text/javascript">
+			function ValidateForm(frm) {
+				if (frm.Name.value == "") { 
+					alert('Name is required.');
+					frm.Name.focus(); 
+					return false;
+				}else if (frm.EmailAddress.value == "") { 
+					alert('Email address is required.'); 
+					frm.EmailAddress.focus(); 
+					return false; 
+				}else if (frm.Comments.value == "") { 
+					alert('Please enter comments or questions.'); 
+					frm.Comments.focus(); 
+					return false; 
+				}else{
+					return true;
+				}
+			}
+			</script>
+			<table style="max-width:100%;border:0;" cellpadding="8" cellspacing="0">
+			<tr>
+				<td><label for="Name">Name*</label></td><td>:</td>
+				<td><input name="Name" type="text" maxlength="60" style="max-width:75%;" /></td>
+			</tr>
+			<tr>
+				<td><label for="PhoneNumber">Phone number</label></td><td>:</td>
+				<td><input name="PhoneNumber" type="text" maxlength="43" style="max-width:75%;" /></td>
+			</tr>
+			<tr>
+				<td><label for="FromEmailAddress">Email address*</label></td><td>:</td>
+				<td><input name="EmailAddress" type="email" maxlength="90" style="max-width:75%;" /></td>
+			</tr>
+			<tr valign="top">
+				<td><label for="Comments">Comments*</label></td><td>:</td>
+				<td><textarea name="Comments" rows="7" cols="40" style="resize: vertical;"></textarea></td>
+			</tr>
+			<tr>
+				<td>* - required fields</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center"><input name="reset" type="reset" value="Reset" />
+					<input name="send" type="submit" value="Send" />
+				</td> 
+			</tr>
+			</table>
+			</form>
+		</div>
+		<div id="myContacts">
+			<ul>
+				<a href="https://www.facebook.com/profile.php?id=100004807209386"><li>Facebook</li></a>
+				<a href="https://www.instagram.com/mario_lorend/"><li>Instagram</li></a>
+				<a href="mailto:ardamomo3@gmail.com"><li>Gmail</li></a>
+				<a href="mailto:mario_lorendsho@yahoo.com"><li>Yahoo</li></a>
+			</ul>
+		</div>
+	</div>
+	<div id="foot">
+		<span>Dibuat pada tahun 2020 oleh MARIO</span>
+	</div>
+</body>
+</html>
